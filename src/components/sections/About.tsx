@@ -49,7 +49,7 @@ export default function About() {
                   CEO & Co-Founder
                 </p>
                 <p className="mt-2 font-display text-2xl font-extrabold">
-                  Mahia Afsun
+                  Suraiya Bokul Bushra
                 </p>
                 <p className="mt-2 text-sm leading-6 text-ink/65">
                   Successfully developed and scaled brands with a strong focus on
