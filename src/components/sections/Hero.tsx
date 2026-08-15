@@ -57,7 +57,7 @@ export default function Hero() {
               className="font-display text-6xl font-extrabold leading-[0.95] text-white sm:text-7xl lg:text-8xl"
             >
               JB
-              Space
+              Stdio
             </motion.h1>
 
             <div className="mt-16 flex flex-col justify-between gap-10 lg:flex-row lg:items-end">
