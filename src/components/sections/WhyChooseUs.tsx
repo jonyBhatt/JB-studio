@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { Sparkle, ArrowUpRight, ShieldCheck, Clock3, Eye, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import RevealText from "@/components/RevealText"
+import MultiStepProjectForm from "../Form/onboarding-form";
 
 const strengths = [
   {
@@ -36,7 +37,7 @@ const strengths = [
   },
 ]
 
-export default function WhyChooseUs() {
+export default function WhyChooseUs() { 
   return (
     <section className="bg-paper px-6 py-28 lg:px-10">
       <div className="mx-auto max-w-7xl">
@@ -100,6 +101,9 @@ export default function WhyChooseUs() {
             </div>
           </motion.div>
         </div>
+
+
+        <MultiStepProjectForm />
       </div>
     </section>
   )

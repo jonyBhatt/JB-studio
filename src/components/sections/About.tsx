@@ -36,7 +36,7 @@ export default function About() {
             <Button className="mt-8">Let's Talk</Button>
           </motion.div>
 
-          <div className="mt-14 grid gap-4 sm:grid-cols-2">
+          {/* <div className="mt-14 grid gap-4 sm:grid-cols-2">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -96,7 +96,7 @@ export default function About() {
                 alt="COO and Co-Founder"
               />
             </motion.div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
