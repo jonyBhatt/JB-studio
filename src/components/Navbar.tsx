@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Logo from "@/assets/logo/jb.svg"
 
 const links = ["Work", "Services", "Blog", "Pricing"]
 
@@ -25,8 +26,8 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-        <a href="#top" className="font-display text-xl font-bold text-white">
-          JB
+        <a href="/" className="font-display text-xl font-bold text-white">
+          <img src={Logo} alt="jb studio logo" className="size-16" />
         </a>
 
         <nav className="hidden items-center gap-8 rounded-full border border-white/10 bg-white/5 px-6 py-2.5 backdrop-blur-sm lg:flex">

@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+import { useLocation } from "react-router"
 import Navbar from "@/components/Navbar"
 import Hero from "@/components/sections/Hero"
 import About from "@/components/sections/About"
@@ -11,8 +13,20 @@ import Footer from "@/components/sections/Footer"
 import WhatYouCanExpect from "@/components/sections/WhatYouCanExpect"
 
 function App() {
+  const location = useLocation()
+
+  useEffect(() => {
+    const targetId = location.hash.slice(1)
+    if (!targetId) return
+
+    const frame = requestAnimationFrame(() => {
+      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" })
+    })
+    return () => cancelAnimationFrame(frame)
+  }, [location.hash])
+
   return (
-    <div className="min-h-screen bg-paper">
+    <div className="min-h-screen bg-paper pb-0">
       <Navbar />
       <Hero />
       <About />
@@ -20,7 +34,7 @@ function App() {
       <Services />
       <Process />
       <WhyChooseUs />
-      <Pricing />
+      {/* <Pricing /> */}
       <WhatYouCanExpect />
       <FAQ />
       <Footer />

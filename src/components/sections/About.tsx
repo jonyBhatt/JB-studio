@@ -14,17 +14,23 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex items-center gap-2 text-sm font-medium text-ink/70"
+          className="flex items-center gap-2 text-sm font-medium text-ink/70 uppercase"
         >
           <Sparkle className="h-3.5 w-3.5 fill-accent text-accent" />
-          ABOUT JB
+          ABOUT Jitb Studio
         </motion.div>
 
         <div>
           <RevealText
+            as="h1"
+            text="Built for Ambitious Businesses Ready to Grow Smarter."
+            className="font-display text-3xl font-bold leading-tight sm:text-4xl lg:text-7xl"
+          />
+          <br />
+          <RevealText
             as="h2"
-            text="Built for ambitious brands that refuse ordinary, combining strategy, creativity, and modern no-code solutions to create lasting impact worldwide."
-            className="font-display text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl"
+            text="We build conversion focused websites and custom AI agents that help businesses generate leads, automate repetitive tasks, and grow without unnecessary complexity."
+            className="font-sans text-2xl text-muted-foreground! font-normal leading-tight sm:text-4xl"
           />
 
           <motion.div

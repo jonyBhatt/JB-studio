@@ -40,15 +40,15 @@ export default function Hero() {
         ></LiquidEther>
         <div className="pt-24 flex flex-col justify-end min-h-dvh items-center">
           <div className="absolute z-10 bottom-0 mx-auto w-full max-w-7xl px-6 lg:px-10 pb-32">
-            <motion.div
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="mb-6 flex items-center gap-2 text-sm text-white/80"
             >
               <Sparkle className="h-3.5 w-3.5 fill-accent text-accent" />
-              Helping ambitious brands launch faster
-            </motion.div>
+              Smarter Websites. Custom AI Agents. Faster Business Growth.
+            </motion.h2>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -56,8 +56,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="font-display text-6xl font-extrabold leading-[0.95] text-white sm:text-7xl lg:text-8xl"
             >
-              JB
-              Stdio
+              Jitb <br />
+              Studio
             </motion.h1>
 
             <div className="mt-16 flex flex-col justify-between gap-10 lg:flex-row lg:items-end">
@@ -68,8 +68,7 @@ export default function Hero() {
                 className="max-w-sm"
               >
                 <p className="text-white/70">
-                  We build websites and experiences that help brands launch
-                  faster, grow smarter, and stand out with confidence.
+                  We help businesses attract more customers and grow faster with high converting websites and custom AI agents that automate tasks, capture leads, and save time.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Button variant="light">
